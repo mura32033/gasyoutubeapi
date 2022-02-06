@@ -20,5 +20,6 @@ function getStats(vId) {
     like: statData.likeCount,
     comment: statData.commentCount
   }
-  Logger.log(videoStat);
+  let json = JSON.stringify(videoStat)
+  Logger.log(json);
 }
