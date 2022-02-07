@@ -16,9 +16,9 @@ function getStats(vId) {
     title: vidData.title,
     channel: vidData.channelTitle,
     tags: vidData.tags ? vidData.tags.toString() : null,
-    view: statData.viewCount,
-    like: statData.likeCount,
-    comment: statData.commentCount
+    view: parseInt(statData.viewCount),
+    like: parseInt(statData.likeCount),
+    comment: parseInt(statData.commentCount)
   }
   let json = JSON.stringify(videoStat)
   Logger.log(json);
